@@ -214,18 +214,18 @@ display:inline-block;
         object-fit:fill;
      }
      .mutual-friend-container{
-         display:inline-block;
+         /* display:inline-block; */
         
      }
      .mutual-friends-picture{
         width: 30px;
         border-radius: 50%;
-        display:inline-block;
+        /* display:inline-block; */
         margin-top: 5px;
      }
 
      .mutual-friends-2-container{
-        display:inline-block;
+        /* display:inline-block; */
         
      }
      .mutual-friends-2-container{
@@ -255,10 +255,13 @@ display:inline-block;
      }
      
      .overall-div{
-        display: flex;
-        flex-direction: row;
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
      }
+      .mutual-friend-grid-container{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
 
 
 
@@ -318,7 +321,7 @@ display:inline-block;
                     <div class="button-overall">
                     <button class="cointainer-button">Follow</button>
                     </div>
-                </div>
+                    </div>
 
                   <div class="overall-div">
                 <div class="add-friend-container">
@@ -327,17 +330,20 @@ display:inline-block;
                      </div>
                      <div class="oliver">
                        Oliver
-                    </div>
+                     </div>
+                     <div class="mutual-friend-grid-container">
                      <div class="mutual-friend-container" mutual>
                       <img class="mutual-friends-picture" src="images/kitty-cat-kitten-pet-45201.jpeg">
                     </div>
                     <div class="mutual-friends-2-container">
                         <p class="mutual-friends-p">2 mutual friends</p>
                     </div>
+
                     <div class="Add-Friend-button">
                     <button class="Add-Friend">Add-Friend</button>
                     </div>
-                </div>
+                    </div>
+                    </div>
 
                 <div class="add-friend-container">
                     <div class="friend-profile-pictures">
@@ -346,14 +352,17 @@ display:inline-block;
                      <div class="oliver">
                        Mimi
                     </div>
+                    <div class="mutual-friend-grid-container" >
                      <div class="mutual-friend-container" mutual>
                       <img class="mutual-friends-picture" src="images/kitty-cat-kitten-pet-45201.jpeg">
                     </div>
                     <div class="mutual-friends-2-container">
                         <p class="mutual-friends-p">2 mutual friends</p>
+                        
                     </div>
                     <div class="Add-Friend-button">
                     <button class="Add-Friend">Add-Friend</button>
+                    </div>
                     </div>
                 </div>
 
@@ -364,11 +373,13 @@ display:inline-block;
                      <div class="oliver">
                        Rex
                     </div>
+                    <div class="mutual-friend-grid-container">
                      <div class="mutual-friend-container" mutual>
                       <img class="mutual-friends-picture" src="images/kitty-cat-kitten-pet-45201.jpeg">
                     </div>
                     <div class="mutual-friends-2-container">
                         <p class="mutual-friends-p">2 mutual friends</p>
+                    </div>
                     </div>
                     <div class="Add-Friend-button">
                     <button class="Add-Friend">Add-Friend</button>
@@ -378,6 +389,93 @@ display:inline-block;
 
 
 
+               <div style=" height: 120px;
+        width:300px;
+        border-color: grey;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        ;
+        ">
+           <div style="
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           margin-top: 5px;
+           padding-left:10px">
+            <div>Home</div>
+            <div> 
+                <button style="background-color: blue;
+                width:50px;
+                border-radius: 5px;
+                margin-right: 10px;">14</button>
+            </div>
+            </div>
+             <div style="
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           margin-top: 30px ;
+           padding-left:10px">
+             <div>Notification</div>
+            <div> 
+                <button style="background-color: blue;
+                width:30px;
+                border-radius: 5px;
+                margin-right: 10px;">3</button>
+            </div>
+            </div>
+            <div style="
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           margin-top: 17px ;
+           padding-left:10px;
+           margin-right: 10px;
+            ">
+             <div>Messages</div>
+            <div> 
+                <button
+                style="background-color: blue;
+                width:20px;
+                border-radius: 5px;">5</button>
+            </div>
+            </div>
+        </div>
+
+        <div style="
+        background-color:purple;
+        border-width:20px;
+        margin-top: 16px;
+        height:50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        ">
+            <div style="color:white;">Home</div>
+
+             <div style="border-color: white;
+              border-style:solid;
+              border-width: 2px;
+              width:400px;
+               border-radius:20px;
+              background-color:white ;">Search</div>
+
+              <div>
+              
+              <button style="
+                border-color: white;
+              border-style:solid;
+              border-width: 2px;
+              background-color: purple;
+              width:80px ;
+              height: 30px;
+              color:white;">Download</button>
+            </div>
+        </div>
 
             
               

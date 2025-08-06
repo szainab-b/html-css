@@ -1,0 +1,19 @@
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-bottom: 100px ;
+  width:100%;
+}
+
+p {
+  font-style: Ariel;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+

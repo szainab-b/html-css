@@ -1,205 +1,210 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>youtube.com clone</title>
-    <style>
-      p{
-        font-style: Ariel;
-        margin-bottom: 0px;
-        margin-top: 0;
-      }
-      .thumbnail {
-        width: 300px;
-        /* height:300px ;
-    object-fit:contain; */
-    object-position:top;
-   
-   
-    /* border: 2px solid red;
-      */
-      }
-      .search-bar {
-        display: block;
-      }
-     
-      
-      .video-preview {
-        
-         vertical-align: top;
-         margin-right: 16px;
-         margin-bottom: 5px;;
-      }
-
-      div.channel-pictures {
-        height: 50px;
-        border-radius: 50%;
-        vertical-align: top;
-        
-      }
-      div.video-info {
-      margin-left:15px;
-      }
-      .video-info-grid{
-        display: grid;
-        grid-template-columns:50px 1fr ;
-        
-        
-      }
-         
-        
-     
-    .video-title{
-      margin-top:5px;
-      font-weight: bold;
-      width: 250px;
-      line-height:20px;
-      
-    }
-    .profile-picture{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-    }
-    .video-author{
-      font-size: 14px;
-      color:rgb(96, 96, 96);
-      margin-bottom: 4px;
-      margin-top: 16px;
-    }
-    .video-stats{
-      font-size: 15px;
-      color:rgb(96, 96, 96);
-      margin-top: 0;
-      
-    }   
-    /* .channel-video-2{
-      display:flex;
-        flex-direction: row; */
-       
-         
-      
-    .video-info-2{
-     margin-left: 10px; 
+    <title>practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/youtube-header.css" />
+    <link rel="stylesheet" href="styles/youtube.css" />
     
-    } 
-    .video-grid{
-      display: grid;
-      grid-template-columns:1fr 1fr 1fr ;
-      column-gap:0px ;
-    }
-    
-    </style>
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search" />
+    <div class="header-overall-container">
+      <div class="left-section-container">
+        <img class="icon-hamburger" src="icon/hamburger-menu.svg" />
+        <img class="icon-youtube-logo" src="icon/youtube-logo.svg" />
+      </div>
 
-    <div class="video-grid">
-         <div class="video-preview">
-        <div>
-        <img class="thumbnail" src="images/thumbnail-1.webp" />
-      </div>
-      <div  class="video-info-grid">
-      <div>
-        <img class="profile-picture" src="channel-pictures/channel-1.jpeg" />
-      </div>
-      <div class="video-info">
-        <p class="video-title">Talking Tech and AU with Google CEO Sundar pichai!</p>
-        <p class="video-author">Marques Brownless</p>
-        <p class="video-stats">3.4m views 6 months now</p>
-      </div>
-     </div>
-     </div>
+      <div class="middle-section-container">
+        <input class="search-input" type="text" placeholder="Search" />
 
-    <div class="video-preview">
-    <div>
-        <img class="thumbnail" src="images/thumbnail-2.webp" />
+        <button class="search-botton">
+          <img class="img-search-icon" src="icon/search.svg" />
+        </button>
+
+        <button class="voice-search-button">
+          <img class="voice-search-img" src="icon/voice-search-icon.svg" />
+        </button>
+      </div>
+      <div class="left-section-container">
+        <img class="left-section-images" src="icon/upload.svg" />
+        <img class="left-section-images" src="icon/youtube-apps.svg" />
+        <img class="left-section-images" src="icon/notifications.svg" />
+        <img
+          class="left-section-images"
+          src="channel-pictures/my-channel.jpeg"
+        />
+      </div>
+      <div class="side-bar">sidebar</div>
+    </div>
+    <div class="video-preview-overall-container">
+      <div class="video-preview-container">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="images/thumbnail-1.webp" />
+          <div class="absolute-time-positioning">4:30</div>
         </div>
-       <div class="video-info-grid">
-       <div>
-        <img class="profile-picture" src="channel-pictures/channel-2.jpeg" />
-       </div>
-       <div class="video-info-2">
-      <p class="video-title">
-       Try Not To Laugh Challenge #9</p>
-      <p class="video-author">Markiplier</p>
-      <p class="video-stats">19M views · 4 years ago</p>
-      </div>
-    </div>
-     </div>
-
-     <div class="video-preview">
-        <div>
-        <img class="thumbnail" src="images/thumbnail-1.webp" />
-      </div>
-      <div  class="video-info-grid">
-      <div>
-        <img class="profile-picture" src="channel-pictures/channel-1.jpeg" />
-      </div>
-      <div class="video-info">
-        <p class="video-title">Talking Tech and AU with Google CEO Sundar pichai!</p>
-        <p class="video-author">Marques Brownless</p>
-        <p class="video-stats">3.4m views 6 months now</p>
-      </div>
-     </div>
-     </div>
-
-     <div class="video-preview">
-    <div>
-        <img class="thumbnail" src="images/thumbnail-2.webp" />
+        <div class="video-channel-flex-container">
+          <div class="channel-pictures">
+            <img class="channel-img" src="channel-pictures/channel-1.jpeg" />
+            <div class="absolute-time-positioning">4:30</div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AU with Google CEO Sundar pichai!
+            </p>
+            <p class="video-author">Marques Brownless</p>
+            <p class="video-stats">3.4m views 6 months now</p>
+          </div>
         </div>
-       <div class="video-info-grid">
-       <div>
-        <img class="profile-picture" src="channel-pictures/channel-2.jpeg" />
-       </div>
-       <div class="video-info-2">
-      <p class="video-title">
-       Try Not To Laugh Challenge #9</p>
-      <p class="video-author">Markiplier</p>
-      <p class="video-stats">19M views · 4 years ago</p>
       </div>
-    </div>
-     </div>
 
-      <div class="video-preview">
-    <div>
-        <img class="thumbnail" src="images/thumbnail-2.webp" />
+      <div class="video-preview-container">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="images/thumbnail-2.webp" />
+          <div class="absolute-time-positioning">4:30</div>
         </div>
-       <div class="video-info-grid">
-       <div>
-        <img class="profile-picture" src="channel-pictures/channel-2.jpeg" />
-       </div>
-       <div class="video-info-2">
-      <p class="video-title">
-       Try Not To Laugh Challenge #9</p>
-      <p class="video-author">Markiplier</p>
-      <p class="video-stats">19M views · 4 years ago</p>
+        <div class="video-channel-flex-container">
+          <div class="channel-pictures">
+            <img class="channel-img" src="channel-pictures/channel-2.jpeg" />
+            <div class="absolute-time-positioning">4:30</div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
       </div>
+
+      <div class="video-preview-container">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="images/thumbnail-2.webp" />
+          <div class="absolute-time-positioning">4:30</div>
+        </div>
+        <div class="video-channel-flex-container">
+          <div class="channel-pictures">
+            <img class="channel-img" src="channel-pictures/channel-2.jpeg" />
+            <div class="absolute-time-positioning">4:30</div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview-container">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="images/thumbnail-2.webp" />
+          <div class="absolute-time-positioning">4:30</div>
+        </div>
+        <div class="video-channel-flex-container">
+          <div class="channel-pictures">
+            <img class="channel-img" src="channel-pictures/channel-2.jpeg" />
+            <div class="absolute-time-positioning">4:30</div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview-container">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="images/thumbnail-2.webp" />
+          <div class="absolute-time-positioning">4:30</div>
+        </div>
+        <div class="video-channel-flex-container">
+          <div class="channel-pictures">
+            <img class="channel-img" src="channel-pictures/channel-2.jpeg" />
+            <div class="absolute-time-positioning">4:30</div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview-container">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="images/thumbnail-2.webp" />
+          <div class="absolute-time-positioning">4:30</div>
+        </div>
+        <div class="video-channel-flex-container">
+          <div class="channel-pictures">
+            <img class="channel-img" src="channel-pictures/channel-2.jpeg" />
+            <div class="absolute-time-positioning">4:30</div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview-container">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="images/thumbnail-3.webp" />
+          <div class="absolute-time-positioning">4:30</div>
+        </div>
+        <div class="video-channel-flex-container">
+          <div class="channel-pictures">
+            <img class="channel-img" src="channel-pictures/channel-3.jpeg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AU with Google CEO Sundar pichai!
+            </p>
+            <p class="video-author">Marques Brownless</p>
+            <p class="video-stats">3.4m views 6 months now</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview-container">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="images/thumbnail-4.webp" />
+          <div class="absolute-time-positioning">4:30</div>
+        </div>
+        <div class="video-channel-flex-container">
+          <div class="channel-pictures">
+            <img class="channel-img" src="channel-pictures/channel-4.jpeg" />
+            <div class="absolute-time-positioning">4:30</div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AU with Google CEO Sundar pichai!
+            </p>
+            <p class="video-author">Marques Brownless</p>
+            <p class="video-stats">3.4m views 6 months now</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview-container">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="images/thumbnail-5.webp" />
+          <div class="absolute-time-positioning">4:30</div>
+        </div>
+        <div class="video-channel-flex-container">
+          <div class="channel-pictures">
+            <img class="channel-img" src="channel-pictures/channel-5.jpeg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      
     </div>
-     </div>
-
-          <div class="video-preview">
-        <div>
-        <img class="thumbnail" src="images/thumbnail-1.webp" />
-      </div>
-      <div  class="video-info-grid">
-      <div>
-        <img class="profile-picture" src="channel-pictures/channel-1.jpeg" />
-      </div>
-      <div class="video-info">
-        <p class="video-title">Talking Tech and AU with Google CEO Sundar pichai!</p>
-        <p class="video-author">Marques Brownless</p>
-        <p class="video-stats">3.4m views 6 months now</p>
-      </div>
-     </div>
-     </div>
-
-    </div>
-   
-       
-    
-    
-    
-    
-
   </body>
 </html>
